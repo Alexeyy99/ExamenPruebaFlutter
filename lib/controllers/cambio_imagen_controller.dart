@@ -5,7 +5,8 @@ class CambioImagenController extends GetxController {
   void onInit() {
     super.onInit();
 
-    adelanteImg();
+   
+    atrasImg();
 
     // cambioImg();
   }
@@ -33,10 +34,9 @@ class CambioImagenController extends GetxController {
     urlImg = imagenes[imagen];
     if (imagen == 9) {
       imagen = 0;
-    } else {
-      imagen++;
     }
-    
+    imagen++;
+
     update();
   }
 
@@ -44,10 +44,9 @@ class CambioImagenController extends GetxController {
     urlImg = imagenes[imagen];
     if (imagen == 0) {
       imagen = 9;
-    }else{
-      imagen--;
     }
-    
+    imagen--;
+
     update();
   }
 
